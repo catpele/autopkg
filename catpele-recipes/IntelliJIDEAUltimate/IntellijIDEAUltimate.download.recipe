@@ -11,7 +11,7 @@
 		<key>DOWNLOAD_URL</key>
 		<string>https://www.jetbrains.com/idea/download/download-thanks.html?platform=mac</string>
 		<key>NAME</key>
-		<string>IntelliJ IDEA Ultimate</string>
+		<string>IntelliJIDEAUltimate</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.2.0</string>
