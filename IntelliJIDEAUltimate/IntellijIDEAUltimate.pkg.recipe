@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest IntelliJ IDEA Ultimate and creates a package. The installer package includes a preinstall script that will check for an existing IntelliJ IDEA.app in /Applications and remove it if found.</string>
     <key>Identifier</key>
-    <string>com.github.rtrouton.pkg.IntelliJ-CE</string>
+    <string>com.github.catpele.pkg.IntelliJIDEAUltimate</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
