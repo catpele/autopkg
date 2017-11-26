@@ -14,7 +14,7 @@
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.catpele.autopkg.download.intellij</string>
+    <string>com.github.catpele.autopkg.download.IntelliJ</string>
     <key>Process</key>
     <array>
         <dict>

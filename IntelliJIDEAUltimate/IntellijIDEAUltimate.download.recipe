@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads latest Intellij disk image.</string>
     <key>Identifier</key>
-    <string>com.catpele.autopkg.download.intellij</string>
+    <string>com.github.catpele.autopkg.download.IntelliJ</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
