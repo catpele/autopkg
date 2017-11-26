@@ -13,7 +13,7 @@
 		<key>GROUP_NAME</key>
 		<string>%NAME%-update-smart</string>
 		<key>GROUP_TEMPLATE</key>
-		<string>%GROUP_TEMPLATE%</string>
+		<string>SmartGroupTemplate.xml</string>
 		<key>MAJOR_VERSION</key>
 		<string>1</string>
 		<key>NAME</key>
