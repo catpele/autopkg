@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the current release version of IntelliJ IDEA Ultimate and builds a package. Then, uploads to the JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.catpele.recipes.jss.IntelliJIDEAUltimate</string>
+	<string>com.github.catpele.jss.IntelliJIDEAUltimate</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -32,7 +32,7 @@
 	<key>MinimumVersion</key>
 	<string>0.2.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.catpele.recipes.IntelliJIDEAUltimate.download</string>
+	<string>com.github.catpele.pkg.IntelliJIDEAUltimate</string>
 	<key>Process</key>
 	<array>
 		<dict>
