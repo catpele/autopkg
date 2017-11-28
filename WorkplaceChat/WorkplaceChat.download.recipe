@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest Workplace Chat installer</string>
     <key>Identifier</key>
-    <string>com.github.catpele.download.WorkPlaceChat</string>
+    <string>com.github.catpele.download.WorkplaceChat</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
