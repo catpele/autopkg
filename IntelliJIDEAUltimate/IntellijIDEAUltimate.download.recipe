@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads latest Intellij disk image.</string>
+    <string>Downloads latest IntelliJ disk image.</string>
     <key>Identifier</key>
     <string>com.github.catpele.download.IntelliJIDEAUltimate</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Intellij</string>
+        <string>IntelliJ IDEA</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.6.0</string>
