@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads latest DataGrip full installer disk image</string>
+    <key>Identifier</key>
+    <string>com.github.catpele.download.datagrip</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>DataGrip</string>
+    </dict>
+    <key>Process</key>
+    <array>
+	<dict>
+	    <key>Processor</key>
+	    <string>CURLTextSearcher</string>
+	    <key>Arguments</key>
+	    <dict>
+		<key>url</key>
+		<string>https://download.jetbrains.com/datagrip/download/download-thanks.html</string>
+		<key>result_output_var_name</key>
+		<string>url_to_download</string>
+		<key>re_pattern</key>
+		<string>value="(https://download.jetbrains.com/datagrip/datagrip-*.exe)"</string>
+	    </dict>
+	</dict>
+        <dict>
+            <key>Processor</key>
+            <string>URLDownloader</string>
+	    <key>Arguments</key>
+	    <dict>
+		<key>url</key>
+		<string>%url_to_download%</string>
+		<key>filename</key>
+		<string>DataGrip.dmg</string>
+	    </dict>
+        </dict>
+        <dict>
+                <key>Processor</key>
+                <string>Versioner</string>
+                <key>Arguments</key>
+                <dict>
+                        <key>input_plist_path</key>
+                        <string>%pathname%/DataGrip.app/Contents/Info.plist</string>
+                </dict>
+        </dict>
+    </array>
+</dict>
+</plist>
+

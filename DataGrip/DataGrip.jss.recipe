@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads Visual Studio Code and builds a package. Then, uploads to the JSS.</string>
+	<string>Downloads the current release version of DataGrip and builds a package. Then, uploads to the JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.catpele.jss.VisualStudioCode</string>
+	<string>com.github.catpele.jss.DataGrip</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -15,9 +15,9 @@
 		<key>GROUP_TEMPLATE</key>
 		<string>SmartGroupTemplate.xml</string>
 		<key>MAJOR_VERSION</key>
-		<string>2</string>
+		<string>1</string>
 		<key>NAME</key>
-		<string>Visual Studio Code</string>
+		<string>DataGrip</string>
 		<key>OS_REQUIREMENTS</key>
 		<string>10.14.x,10.13.x,10.12.x,10.11.x,10.10.x</string>
 		<key>POLICY_CATEGORY</key>
@@ -25,14 +25,14 @@
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string>Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.</string>
+		<string>A capable and ergonomic IDE</string>
 		<key>SELF_SERVICE_ICON</key>
-		<string>VisualStudioCode.png</string>
+		<string>DataGrip.png</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.2.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.killahquam.pkg.visualstudioscode</string>
+	<string>com.github.catpele.pkg.DataGrip</string>
 	<key>Process</key>
 	<array>
 		<dict>
