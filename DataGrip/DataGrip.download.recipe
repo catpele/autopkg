@@ -3,50 +3,48 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads latest DataGrip full installer disk image</string>
+    <string>Downloads latest DataGrip disk image.</string>
     <key>Identifier</key>
-    <string>com.github.catpele.download.datagrip</string>
+    <string>com.github.catpele.download.DataGrip</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
         <string>DataGrip</string>
     </dict>
+    <key>MinimumVersion</key>
+    <string>0.6.0</string>
     <key>Process</key>
     <array>
-	<dict>
-	    <key>Processor</key>
-	    <string>CURLTextSearcher</string>
-	    <key>Arguments</key>
-	    <dict>
-		<key>url</key>
-		<string>https://download.jetbrains.com/datagrip/download/download-thanks.html</string>
-		<key>result_output_var_name</key>
-		<string>url_to_download</string>
-		<key>re_pattern</key>
-		<string>value="(https://download.jetbrains.com/datagrip/datagrip-*.exe)"</string>
-	    </dict>
-	</dict>
+        <dict>
+            <key>Processor</key>
+            <string>DataGripURLProvider</string>
+        </dict>
         <dict>
             <key>Processor</key>
             <string>URLDownloader</string>
-	    <key>Arguments</key>
-	    <dict>
-		<key>url</key>
-		<string>%url_to_download%</string>
-		<key>filename</key>
-		<string>DataGrip.dmg</string>
-	    </dict>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>%url%</string>
+                <key>filename</key>
+                <string>%NAME%.dmg</string>
+            </dict>
         </dict>
         <dict>
-                <key>Processor</key>
-                <string>Versioner</string>
-                <key>Arguments</key>
-                <dict>
-                        <key>input_plist_path</key>
-                        <string>%pathname%/DataGrip.app/Contents/Info.plist</string>
-                </dict>
+            <key>Processor</key>
+            <string>EndOfCheckPhase</string>
+        </dict>
+        <dict>
+          <key>Processor</key>
+          <string>CodeSignatureVerifier</string>
+          <key>Arguments</key>
+          <dict>
+            <key>input_path</key>
+            <string>%pathname%/DataGrip.app</string>
+            <key>requirement</key>
+            <string>anchor apple generic and identifier "com.jetbrains.intellij" and (certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "2ZEFAR8TH3")</string>
+         </dict>
         </dict>
     </array>
 </dict>
 </plist>
-
