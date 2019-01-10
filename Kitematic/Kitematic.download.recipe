@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Kitematic.</string>
 	<key>Identifier</key>
-	<string>com.github.jps3.download.Kitematic</string>
+	<string>com.github.catpele.download.Kitematic</string>
 	<key>Input</key>
 	<dict>
 		<key>DOWNLOAD_PAGE_URL</key>
