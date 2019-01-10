@@ -65,8 +65,8 @@ class DataGripURLProvider(Processor):
     version_url = self.env.get('version_url', DataGrip_version_url)
     version = self.get_DataGrip_version(version_url)
     download_url = (
-      "https://download.jetbrains.com/idea/"
-      "ideaI-%s.dmg" % (version)
+      "https://download.jetbrains.com/datagrip/"
+      "datagrip-%s.dmg" % (version)
     )
 
     self.env["url"] = download_url
