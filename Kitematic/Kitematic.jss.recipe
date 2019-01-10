@@ -25,7 +25,7 @@
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string>Visual Docker container management for Mac & Windows</string>
+		<string>Visual Docker container management for Mac and Windows</string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>Kitematic.png</string>
 	</dict>
